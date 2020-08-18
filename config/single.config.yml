@@ -1,0 +1,15 @@
+server: hub-cloud.browserstack.com
+user: BROWSERSTACK_USERNAME
+key: BROWSERSTACK_ACCESS_KEY
+
+common_caps:
+  name: "Single Test"
+  project: "Capybara Demo"
+  build: capybara-browserstack
+  browserstack.debug: true
+  browserstack.networkLogs: true
+  os: Windows
+  os_version: 10
+
+browser_caps:
+- browser: chrome

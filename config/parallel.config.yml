@@ -1,0 +1,17 @@
+server: hub-cloud.browserstack.com
+user: BROWSERSTACK_USERNAME
+key: BROWSERSTACK_ACCESS_KEY
+
+common_caps:
+  name: "Parallel Test"
+  project: "Capybara Demo"
+  build: capybara-browserstack
+  browserstack.debug: true
+  browserstack.networkLogs: true
+
+browser_caps:
+- browser: chrome
+- browser: firefox
+- browser: internet explorer
+- browser: safari
+  browser_version: 11
